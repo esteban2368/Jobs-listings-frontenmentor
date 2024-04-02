@@ -1,0 +1,10 @@
+.containerCards{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.card{
+    background-color: white;
+    box-shadow: 0 15px 20px -5px hsl(var(--Light-Grayish-Cyan-shadow), .15);
+    border-radius: 5px;
+}
