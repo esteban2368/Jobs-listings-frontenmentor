@@ -4,6 +4,7 @@
 
 :root {
   --Dark-Cyan: 180, 29%, 50%;
+  --Light-Grayish-Cyan-separate: 180, 10%, 74%;
   --Light-Grayish-Cyan-shadow: 189, 81%, 28%;
   --Light-Grayish-Cyan-background: 180, 52%, 96%;
   --Light-Grayish-Cyan-filters: 180, 31%, 95%;
@@ -13,4 +14,5 @@
 
 body {
   background-color: hsl(var(--Light-Grayish-Cyan-background));
+  line-height: 1.5;
 }
