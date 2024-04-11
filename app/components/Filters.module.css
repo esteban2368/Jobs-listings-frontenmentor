@@ -1,0 +1,44 @@
+.container{
+    background-color: white;
+    box-shadow: 0 15px 20px -5px hsl(var(--Light-Grayish-Cyan-shadow), .15);
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px
+}
+.tag{
+    height: 32px;
+    background-color: hsl(var(--Light-Grayish-Cyan-filters));
+    color: hsl(var(--Dark-Cyan));
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+}
+.tag__text{
+    padding: 0 10px;
+}
+.tag__button{
+    background-color: hsl(var(--Dark-Cyan));
+    color: white;
+    padding: 10px;
+}
+.tag__button:hover{
+    background-color: hsl(var(--Very-Dark-Grayish-Cyan));
+}
+.tag__icon{
+    width: 14px;
+}
+.link{
+   color: hsl(var(--Dark-Grayish-Cyan)); 
+   font-size: 1rem;
+}
+.link:hover{
+   color: hsl(var(--Dark-Cyan)); 
+   text-decoration: underline;
+}

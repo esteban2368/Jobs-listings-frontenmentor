@@ -1,3 +1,4 @@
+import Filters from "./components/Filters";
 import Jobs from "./components/Jobs";
 
 import style from "./Home.module.css"
@@ -14,7 +15,8 @@ export default async function Home() {
   return (
     <>
       <header className={style.header}></header>
-      <section className={`${style.container} mx-6 mt-8`}>
+      <section className={`${style.container} flex flex-col gap-14 sm:gap-10 mx-6 mt-8`}>
+        <Filters/>
         <Jobs list={jobsData}/>
       </section>
     </>

@@ -18,32 +18,34 @@ const Jobs = ({list}) =>{
                         {job.featured &&
                             <div className={style.card__line}></div>
                         }
-                        <Image
-                            src={job.logo}
-                            alt={`Logo company ${job.company}`}
-                            width={88}
-                            height={88}
-                            className="hidden sm:block"
-                        />
-                        <div className={style.info}>
-                            <div className="flex gap-4 items-center">
-                                <span className={style.title}>{job.company}</span>
-                                <div className="flex items-center gap-2">
-                                    {job.new &&
-                                        <span className={`${style.badge} ${style.badge_level1} p-2`}>New!</span>                        
-                                    }
-                                    {job.featured &&
-                                        <span className={`${style.badge} ${style.badge_level2} p-2`}>Feactured</span>                        
-                                    }
+                        <div className="sm:flex items-center gap-6">
+                            <Image
+                                src={job.logo}
+                                alt={`Logo company ${job.company}`}
+                                width={88}
+                                height={88}
+                                className="hidden sm:block"
+                            />
+                            <div className={style.info}>
+                                <div className="flex gap-4 items-center">
+                                    <span className={style.title}>{job.company}</span>
+                                    <div className="flex items-center gap-2">
+                                        {job.new &&
+                                            <span className={`${style.badge} ${style.badge_level1} p-2`}>New!</span>
+                                        }
+                                        {job.featured &&
+                                            <span className={`${style.badge} ${style.badge_level2} p-2`}>Feactured</span>
+                                        }
+                                    </div>
                                 </div>
-                            </div>
-                            <span className={`${style.title} ${style.title__sub}`}>{job.position}</span>
-                            <div className={style.info__general}>
-                                <span>{job.postedAt}</span>
-                                <span className={style.bullet}>&bull;</span>
-                                <span>{job.contract}</span>
-                                <span className={style.bullet}>&bull;</span>
-                                <span>{job.location}</span>
+                                <span className={`${style.title} ${style.title__sub}`}>{job.position}</span>
+                                <div className={style.info__general}>
+                                    <span>{job.postedAt}</span>
+                                    <span className={style.bullet}>&bull;</span>
+                                    <span>{job.contract}</span>
+                                    <span className={style.bullet}>&bull;</span>
+                                    <span>{job.location}</span>
+                                </div>
                             </div>
                         </div>
                         <div className={style.separate}></div>

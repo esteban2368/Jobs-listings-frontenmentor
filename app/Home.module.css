@@ -7,6 +7,8 @@
 }
 .container{
     max-width: 1110px;
+    font-size: 16px;
+    margin-top: -36px;
 }
 
 @media (min-width:376px) {
@@ -17,5 +19,6 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        font-size: 22.5px;
     }
 }
