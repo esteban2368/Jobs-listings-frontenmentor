@@ -2,6 +2,7 @@
     background-color: white;
     box-shadow: 0 15px 20px -5px hsl(var(--Light-Grayish-Cyan-shadow), .15);
     border-radius: 5px;
+    margin-top: -72px;
 
     display: flex;
     justify-content: space-between;
@@ -26,7 +27,11 @@
 .tag__button{
     background-color: hsl(var(--Dark-Cyan));
     color: white;
-    padding: 10px;
+    padding: 0 10px;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
 }
 .tag__button:hover{
     background-color: hsl(var(--Very-Dark-Grayish-Cyan));

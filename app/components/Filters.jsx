@@ -1,48 +1,29 @@
 'use client'
 import { useState } from 'react'
-import {v4 as uuidv4} from 'uuid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import style from './Filters.module.css'
 
+import { useFilterContext } from '../contexts/FiltersProvider'
+
 const Filters = ()=>{
-    const filters = [{
-            id: uuidv4(),
-            name: "React"
-        }, {
-            id: uuidv4(),
-            name: "Javascript"
-        }, {
-            id: uuidv4(),
-            name: "Pyton"
-        }, {
-            id: uuidv4(),
-            name: "HTML"
-    }]
-    const [filter, setFilter] = useState(
-        filters
-    )
+    const {filtersItem, removeFilters, clearFilters } = useFilterContext()
     return (
         <div className={`${style.container} p-5 sm:px-10`}>
             <ul className="flex flex-wrap gap-4">
-                {filter.map((filterElement, index)=>
+                {filtersItem.map((filterElement, index)=>
                     <li key={filterElement.id} className={style.tag}>
                         <span className={style.tag__text}>{filterElement.name}</span>
                         <button 
                             className={style.tag__button}
-                            onClick={()=>
-                                setFilter(
-                                    filter.filter(f=>
-                                        f.id !== filterElement.id
-                                ))
-                            }
+                            onClick={()=> removeFilters(filterElement)}
                         >
                             <FontAwesomeIcon icon={faXmark} className={style.tag__icon}/>
                         </button>
                     </li>
                 )}
             </ul>
-            <button className={style.link}>Clear</button>
+            <button className={style.link} onClick={clearFilters}>Clear</button>
         </div>
     )
 }
