@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Tags from "./Tags";
-import useFilters from "../api/hooks/useFilter";
+import useFilters from "../hooks/useFilter";
 import style from "./Jobs.module.css"
 
 const Jobs = ({list}) =>{
