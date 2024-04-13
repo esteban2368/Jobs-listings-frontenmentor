@@ -9,12 +9,14 @@ This is a solution to the [Job listings with filtering](https://www.frontendment
 ### Links
 
 - Solution URL: [Code solution](https://github.com/DanijelAdrinek/Advice-Generator)
-- Live Site URL: [Live site](https://danijeladrinek.github.io/Advice-Generator/)
+- Live Site URL: [Live site](https://jobs-listings-frontenmentor-o96bxpxqf.vercel.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS modules
-- Mobile-first workflow
-- js OOP concepts
-- JSDoc
+- Modules CSS
+- Flexbox
+- [NextJS](https://nextjs.org/) - React framework 
+- [ReactJS](https://react.dev/) - Library javascript for web user interfaces
+- [FontAawesome](https://fontawesome.com/) - Font icons
+- [Tailwind](https://tailwindui.com/) - Framework CSS
