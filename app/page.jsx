@@ -1,4 +1,3 @@
-import jobsData from './api/mocks/jobs.json'
 import Filters from "./components/Filters";
 import Jobs from "./components/Jobs";
 
@@ -7,15 +6,15 @@ import Providers from "./components/providers";
 
 import style from "./Home.module.css"
 
-/*const getJobs =  async () =>{
+const getJobs =  async () =>{
   const response = await fetch(`${process.env.API_URL}/api`,{
     method: 'GET'
   })
   return response.json()
-}*/
+}
 
 export default async function Home() {
-  //const jobsData = await getJobs()
+  const jobsData = await getJobs()
   return (
     <>
       <header className={style.header}></header>
