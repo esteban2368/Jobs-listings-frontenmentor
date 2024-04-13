@@ -1,11 +1,16 @@
+"use client"
 import Image from "next/image";
 import Tags from "./Tags";
+import useFilters from "../api/hooks/useFilter";
 import style from "./Jobs.module.css"
 
 const Jobs = ({list}) =>{
+    const {jobsWithFilters, jobsFiltered} = useFilters()
+    const jobsData = jobsWithFilters(list)
+    const newJobsFiltered = jobsFiltered(jobsData)
     return(
         <ul className={style.containerCards}>
-           { list.map(job => 
+           { newJobsFiltered.map(job => 
                 <li key={job.id} className={`${style.card}`}>
                     <Image
                         src={job.logo}
