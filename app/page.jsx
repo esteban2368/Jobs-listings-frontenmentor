@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <>
       <header className={style.header}></header>
-      <section className={`${style.container} flex flex-col gap-14 sm:gap-10 mx-6 mt-8`}>
+      <section className={`${style.container} flex flex-col gap-14 sm:gap-10 mx-6 mt-8 mb-12`}>
         <Providers>
           <ContextWrapper>
             <Filters/>
