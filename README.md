@@ -14,7 +14,7 @@ This is a solution to the [Job listings with filtering](https://www.frontendment
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS modules
 - Mobile-first workflow
 - js OOP concepts
 - JSDoc
