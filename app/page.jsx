@@ -2,7 +2,7 @@ import Filters from "./components/Filters";
 import Jobs from "./components/Jobs";
 
 import ContextWrapper from "./components/ContextWrapper";
-import Providers from "./components/Providers";
+import Providers from "./components/providers";
 
 import style from "./Home.module.css"
 
