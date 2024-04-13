@@ -1,12 +1,13 @@
 import Filters from "./components/Filters";
 import Jobs from "./components/Jobs";
+
 import ContextWrapper from "./components/ContextWrapper";
 import Providers from "./components/Providers";
 
 import style from "./Home.module.css"
 
 const getJobs =  async () =>{
-  const response = await fetch('http://localhost:3000/api',{
+  const response = await fetch(`${process.env.API_URL}/api`,{
     method: 'GET'
   })
   return response.json()
